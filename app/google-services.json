@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "396516209397",
+    "firebase_url": "https://salimosapp-newsolutions.firebaseio.com",
+    "project_id": "salimosapp-newsolutions",
+    "storage_bucket": "salimosapp-newsolutions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396516209397:android:59ccd3a1e48bebd4898bbc",
+        "android_client_info": {
+          "package_name": "com.app.salimos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396516209397-jpdfqoptenhelqi4durvukl0o33rjpfo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.salimos",
+            "certificate_hash": "f956dfd1aec88e2229cceea40dea3dce52e4bb30"
+          }
+        },
+        {
+          "client_id": "396516209397-38ba8rhnc8iob3p35jq1723h1isrnhhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-jaTmLsPnwN-w5sOVm6kCNdTZvQSpI8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396516209397-38ba8rhnc8iob3p35jq1723h1isrnhhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

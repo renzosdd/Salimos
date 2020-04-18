@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".EventDetailActivity">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/event_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/event_detail_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:justificationMode="inter_word"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowDetailWebPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        app:srcCompat="@drawable/sharp_http_black_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/event_detail_webpage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        app:srcCompat="@drawable/sharp_date_range_black_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/event_detail_date_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        app:srcCompat="@drawable/sharp_date_range_black_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/event_detail_date_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowDetailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        app:srcCompat="@drawable/sharp_room_black_24"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/event_detail_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:color="@color/colorBackground"
+            android:layout_margin="@dimen/fab_margin"
+            android:tooltipText="Agregar a la agenda"
+            app:srcCompat="@drawable/sharp_date_range_24" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

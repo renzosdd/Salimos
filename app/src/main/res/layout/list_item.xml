@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="5dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/list_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="nameEv"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/list_date_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/darker_gray"
+                    android:fontFamily="sans-serif-light"
+                    tools:text="dateEv"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/list_date_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    tools:text="dateEv"
+                    android:layout_gravity="center"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

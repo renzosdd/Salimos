@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Salimos</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_signOut">Cerrar Sesion</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="title_activity_event_map">Map</string>
+    <string name="iniciar_sesion">Iniciar sesion</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
+    <string name="registrar">Registrar</string>
+</resources>
